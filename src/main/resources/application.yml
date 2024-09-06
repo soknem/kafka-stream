@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: kafka-stream
+  datasource:
+    username: postgres
+    password: postgres@123
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://68.183.187.158:5432/kafka_stream
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          destination: input-topic
+#          group: consumer-group
+#          binder: kafka
+#        output:
+#          destination: output-topic
+#          binder: kafka
+#      kafka:
+#        binder:
+#          brokers: 68.183.187.158:9094
+
